@@ -1,0 +1,83 @@
+QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+Start time: 00:10:44 on Mar 07,2025
+vcover report adder_tb.ucdb -details -annotate -all 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\adder_tb#a1 
+=== Design Unit: work.adder
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\adder_tb#a1 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File lab_1.v
+------------------------------------IF Branch------------------------------------
+    11                                        15     Count coming in to IF
+    11              1                          4         if(reset)
+    13              1                         11         else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       3         3         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\adder_tb#a1  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File lab_1.v
+    1                                                module adder(
+    2                                                    input  clk,
+    3                                                    input  reset,
+    4                                                    input  signed  [3:0]A,
+    5                                                    input  signed  [3:0]B,
+    6                                                    output reg signed [4:0] C
+    7                                                );
+    8                                                
+    9                                                
+    10              1                         15     always @(posedge clk, posedge reset) begin
+    11                                                   if(reset)
+    12              1                          4             C <= 5'b0;
+    13                                                   else begin
+    14              1                         11             C <= A + B;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         30        30         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\adder_tb#a1  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            A[0-3]           1           1      100.00 
+                                            B[0-3]           1           1      100.00 
+                                            C[4-0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                             reset           1           1      100.00 
+
+Total Node Count     =         15 
+Toggled Node Count   =         15 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (30 of 30 bins)
+
+
+Total Coverage By Instance (filtered view): 100.00%
+
+End time: 00:10:44 on Mar 07,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

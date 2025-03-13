@@ -1,0 +1,79 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\adder_tb#a1 
+=== Design Unit: work.adder
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\adder_tb#a1 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File lab_1.v
+------------------------------------IF Branch------------------------------------
+    12                                         9     Count coming in to IF
+    12              1                          2         if(reset)
+    14              1                          7         else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       3         3         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\adder_tb#a1  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File lab_1.v
+    1                                                module adder(
+    2                                                    input  clk,
+    3                                                    input  reset,
+    4                                                    input  signed  [3:0]A,
+    5                                                    input  signed  [3:0]B,
+    6                                                    output reg signed [4:0] C
+    7                                                );
+    8                                                
+    9                                                
+    10                                               
+    11              1                          9     always @(posedge clk, posedge reset) begin
+    12                                                   if(reset)
+    13              1                          2             C <= 5'b0;
+    14                                                   else begin
+    15              1                          7             C <= A + B;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         30        29         1    96.66%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\adder_tb#a1  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            A[0-3]           1           1      100.00 
+                                            B[0-3]           1           1      100.00 
+                                            C[4-0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                             reset           1           0       50.00 
+
+Total Node Count     =         15 
+Toggled Node Count   =         14 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      96.66% (29 of 30 bins)
+
+
+Total Coverage By Instance (filtered view): 98.88%
+
