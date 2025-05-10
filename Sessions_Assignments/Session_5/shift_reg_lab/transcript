@@ -1,0 +1,941 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+pwd
+# C:/Users/ABDOU/Desktop/Digital_World/Digital_Ic_Diploma/verification/Session_5/lab
+ls
+# certe_dump.xml         shift_reg_env.sv         shift_reg_test.sv  
+# lab.rar                shift_reg_if.sv          src_files.list     
+# run.do                 shift_reg_main_seq.sv    top.sv             
+# shift_reg.v            shift_reg_mon.sv         transcript         
+# shift_reg_agt.sv       shift_reg_reset_seq.sv   vsim.wlf           
+# shift_reg_config.sv    shift_reg_scoreboard.sv  work               
+# shift_reg_coverage.sv  shift_reg_seq_item.sv                       
+# shift_reg_driver.sv    shift_reg_sqr.sv                            
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:17:31 on May 09,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling package shift_reg_seq_item_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) shift_reg_seq_item.sv(3): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package shift_reg_coverage_pkg
+# -- Importing package shift_reg_seq_item_pkg
+# -- Compiling package shift_reg_scoreboard_pkg
+# -- Compiling package shift_reg_sequencer_pkg
+# -- Compiling package shift_reg_reset_seq_pkg
+# -- Compiling package shift_reg_main_seq_pkg
+# -- Compiling module shift_reg
+# -- Compiling interface shift_reg_if
+# -- Compiling package shift_config_pkg
+# -- Compiling package shift_reg_monitor_pkg
+# -- Importing package shift_config_pkg
+# -- Compiling package shift_driver_pkg
+# -- Compiling package shift_reg_agent_pkg
+# -- Importing package shift_driver_pkg
+# -- Importing package shift_reg_sequencer_pkg
+# -- Importing package shift_reg_monitor_pkg
+# -- Compiling package shift_reg_env_pkg
+# -- Importing package shift_reg_agent_pkg
+# -- Importing package shift_reg_scoreboard_pkg
+# -- Importing package shift_reg_coverage_pkg
+# -- Compiling package shift_reg_test_pkg
+# -- Importing package shift_reg_env_pkg
+# -- Importing package shift_reg_reset_seq_pkg
+# -- Importing package shift_reg_main_seq_pkg
+# ** Error: shift_reg_test.sv(40): (vlog-2164) Class or package 'shift_reg_seq_item' not found.
+# ** Error: (vlog-13069) shift_reg_test.sv(40): near "::": syntax error, unexpected ::, expecting ')'.
+# ** Error: shift_reg_test.sv(40): (vlog-2164) Class or package 'shift_reg_seq_item_dis_rst' not found.
+# End time: 14:17:32 on May 09,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -f src_files.list"
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 14:17:56 on May 09,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling package shift_reg_seq_item_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) shift_reg_seq_item.sv(3): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package shift_reg_coverage_pkg
+# -- Importing package shift_reg_seq_item_pkg
+# -- Compiling package shift_reg_scoreboard_pkg
+# -- Compiling package shift_reg_sequencer_pkg
+# -- Compiling package shift_reg_reset_seq_pkg
+# -- Compiling package shift_reg_main_seq_pkg
+# -- Compiling module shift_reg
+# -- Compiling interface shift_reg_if
+# -- Compiling package shift_config_pkg
+# -- Compiling package shift_reg_monitor_pkg
+# -- Importing package shift_config_pkg
+# -- Compiling package shift_driver_pkg
+# -- Compiling package shift_reg_agent_pkg
+# -- Importing package shift_driver_pkg
+# -- Importing package shift_reg_sequencer_pkg
+# -- Importing package shift_reg_monitor_pkg
+# -- Compiling package shift_reg_env_pkg
+# -- Importing package shift_reg_agent_pkg
+# -- Importing package shift_reg_scoreboard_pkg
+# -- Importing package shift_reg_coverage_pkg
+# -- Compiling package shift_reg_test_pkg
+# -- Importing package shift_reg_env_pkg
+# -- Importing package shift_reg_reset_seq_pkg
+# -- Importing package shift_reg_main_seq_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package shift_reg_test_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:17:57 on May 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.top -classdebug -uvmcontrol=all 
+# Start time: 14:17:57 on May 09,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.shift_reg_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.shift_reg_seq_item_pkg(fast)
+# Loading work.shift_reg_main_seq_pkg(fast)
+# Loading work.shift_reg_reset_seq_pkg(fast)
+# Loading work.shift_reg_coverage_pkg(fast)
+# Loading work.shift_reg_scoreboard_pkg(fast)
+# Loading work.shift_config_pkg(fast)
+# Loading work.shift_reg_monitor_pkg(fast)
+# Loading work.shift_reg_sequencer_pkg(fast)
+# Loading work.shift_driver_pkg(fast)
+# Loading work.shift_reg_agent_pkg(fast)
+# Loading work.shift_reg_env_pkg(fast)
+# Loading work.shift_reg_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.shift_reg_if(fast__2)
+# Loading work.shift_reg(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# UVM_INFO @ 0: reporter [RNTST] Running test shift_reg_test...
+# UVM_INFO shift_reg_test.sv(56) @ 0: uvm_test_top [run_phase] RESET Asserted
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+# UVM_INFO shift_reg_driver.sv(49) @ 2: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 1, serial_in = 0, direction = 0, mode = 0, datain = 0, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 2: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 1, serial_in = 0, direction = 0, mode = 0, datain = 0, dataout = 0
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 2: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 1, serial_in = 0, direction = 0, mode = 0, datain = 0, dataout = 0
+# UVM_INFO shift_reg_test.sv(58) @ 2: uvm_test_top [run_phase] RESET deAsserted
+# UVM_INFO shift_reg_test.sv(61) @ 2: uvm_test_top [run_phase] Main Asserted
+# UVM_INFO shift_reg_driver.sv(49) @ 4: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 4: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = 111011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 4: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = 111011
+# UVM_INFO shift_reg_driver.sv(49) @ 6: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 6: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = 110001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 6: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = 110001
+# UVM_INFO shift_reg_driver.sv(49) @ 8: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 8: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1100, dataout = 11000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 8: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1100, dataout = 11000
+# UVM_INFO shift_reg_driver.sv(49) @ 10: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 10: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 10: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 12: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 12: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10111, dataout = 101011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 12: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10111, dataout = 101011
+# UVM_INFO shift_reg_driver.sv(49) @ 14: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 14: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = 110110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 14: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = 110110
+# UVM_INFO shift_reg_driver.sv(49) @ 16: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 16: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111000, dataout = 111100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 16: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111000, dataout = 111100
+# UVM_INFO shift_reg_driver.sv(49) @ 18: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 18: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = 100111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 18: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = 100111
+# UVM_INFO shift_reg_driver.sv(49) @ 20: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 20: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = 100100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 20: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = 100100
+# UVM_INFO shift_reg_driver.sv(49) @ 22: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 22: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 22: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 24: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 24: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 24: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_driver.sv(49) @ 26: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 26: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1010, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 26: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1010, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 28: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 28: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110000, dataout = 100001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 28: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110000, dataout = 100001
+# UVM_INFO shift_reg_driver.sv(49) @ 30: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 0, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 30: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 30: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_driver.sv(49) @ 32: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 32: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1010, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 32: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1010, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 34: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 34: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = 100111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 34: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110011, dataout = 100111
+# UVM_INFO shift_reg_driver.sv(49) @ 36: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 36: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = 110100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 36: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = 110100
+# UVM_INFO shift_reg_driver.sv(49) @ 38: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 38: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 38: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 40: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 40: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 40: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_driver.sv(49) @ 42: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 0, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 42: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 42: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_driver.sv(49) @ 44: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 44: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 44: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 46: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 46: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 46: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_driver.sv(49) @ 48: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 48: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 48: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 50: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 50: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110110, dataout = 101101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 50: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110110, dataout = 101101
+# UVM_INFO shift_reg_driver.sv(49) @ 52: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 52: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110100, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 52: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110100, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 54: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 54: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110101, dataout = 101011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 54: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110101, dataout = 101011
+# UVM_INFO shift_reg_driver.sv(49) @ 56: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 56: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = 11101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 56: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = 11101
+# UVM_INFO shift_reg_driver.sv(49) @ 58: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 58: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 58: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_driver.sv(49) @ 60: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 60: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110001, dataout = 100011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 60: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110001, dataout = 100011
+# UVM_INFO shift_reg_driver.sv(49) @ 62: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 62: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1110, dataout = 11100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 62: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1110, dataout = 11100
+# UVM_INFO shift_reg_driver.sv(49) @ 64: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 64: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 64: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 66: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 66: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110001, dataout = 111000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 66: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110001, dataout = 111000
+# UVM_INFO shift_reg_driver.sv(49) @ 68: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 68: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111100, dataout = 111000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 68: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111100, dataout = 111000
+# UVM_INFO shift_reg_driver.sv(49) @ 70: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 70: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 70: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 72: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 10001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 72: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 10001, dataout = 101000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 72: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 10001, dataout = 101000
+# UVM_INFO shift_reg_driver.sv(49) @ 74: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 74: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110001, dataout = 100011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 74: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110001, dataout = 100011
+# UVM_INFO shift_reg_driver.sv(49) @ 76: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 76: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 100, dataout = 1000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 76: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 100, dataout = 1000
+# UVM_INFO shift_reg_driver.sv(49) @ 78: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 78: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110110, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 78: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110110, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 80: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 80: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 80: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 82: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 82: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = 11100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 82: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = 11100
+# UVM_INFO shift_reg_driver.sv(49) @ 84: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 84: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10010, dataout = 101001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 84: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10010, dataout = 101001
+# UVM_INFO shift_reg_driver.sv(49) @ 86: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 86: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 86: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_driver.sv(49) @ 88: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 88: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 88: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 90: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 90: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111111, dataout = 111111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 90: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111111, dataout = 111111
+# UVM_INFO shift_reg_driver.sv(49) @ 92: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 92: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111001, dataout = 110010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 92: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111001, dataout = 110010
+# UVM_INFO shift_reg_driver.sv(49) @ 94: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 94: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 94: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 96: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 96: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11, dataout = 111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 96: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11, dataout = 111
+# UVM_INFO shift_reg_driver.sv(49) @ 98: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 98: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100111, dataout = 1111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 98: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100111, dataout = 1111
+# UVM_INFO shift_reg_driver.sv(49) @ 100: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 100: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1000, dataout = 100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 100: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1000, dataout = 100
+# UVM_INFO shift_reg_driver.sv(49) @ 102: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 102: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11110, dataout = 1111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 102: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11110, dataout = 1111
+# UVM_INFO shift_reg_driver.sv(49) @ 104: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 104: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1100, dataout = 11000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 104: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1100, dataout = 11000
+# UVM_INFO shift_reg_driver.sv(49) @ 106: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 106: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111110, dataout = 111101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 106: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111110, dataout = 111101
+# UVM_INFO shift_reg_driver.sv(49) @ 108: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 108: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 108: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_driver.sv(49) @ 110: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 110: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 110: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 112: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 112: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 112: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 114: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 114: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100101, dataout = 110010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 114: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100101, dataout = 110010
+# UVM_INFO shift_reg_driver.sv(49) @ 116: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 116: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111101, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 116: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111101, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 118: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 118: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 118: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_driver.sv(49) @ 120: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 120: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 120: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 122: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 122: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11100, dataout = 111000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 122: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11100, dataout = 111000
+# UVM_INFO shift_reg_driver.sv(49) @ 124: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 124: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11101, dataout = 101110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 124: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11101, dataout = 101110
+# UVM_INFO shift_reg_driver.sv(49) @ 126: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 126: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 126: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_driver.sv(49) @ 128: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 128: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101011, dataout = 10111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 128: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101011, dataout = 10111
+# UVM_INFO shift_reg_driver.sv(49) @ 130: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 130: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = 100001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 130: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = 100001
+# UVM_INFO shift_reg_driver.sv(49) @ 132: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 132: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101, dataout = 1010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 132: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101, dataout = 1010
+# UVM_INFO shift_reg_driver.sv(49) @ 134: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 134: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110011, dataout = 11001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 134: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110011, dataout = 11001
+# UVM_INFO shift_reg_driver.sv(49) @ 136: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 136: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 136: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 138: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 138: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 138: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_driver.sv(49) @ 140: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 140: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 140: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_driver.sv(49) @ 142: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 142: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110111, dataout = 101110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 142: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110111, dataout = 101110
+# UVM_INFO shift_reg_driver.sv(49) @ 144: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 144: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 144: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 146: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 146: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = 1110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 146: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = 1110
+# UVM_INFO shift_reg_driver.sv(49) @ 148: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 148: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 148: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 150: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 150: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110, dataout = 11
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 150: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110, dataout = 11
+# UVM_INFO shift_reg_driver.sv(49) @ 152: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 152: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11, dataout = 110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 152: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11, dataout = 110
+# UVM_INFO shift_reg_driver.sv(49) @ 154: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 154: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = 11110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 154: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = 11110
+# UVM_INFO shift_reg_driver.sv(49) @ 156: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 156: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10101, dataout = 101010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 156: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10101, dataout = 101010
+# UVM_INFO shift_reg_driver.sv(49) @ 158: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 158: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = 11110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 158: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111101, dataout = 11110
+# UVM_INFO shift_reg_driver.sv(49) @ 160: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 160: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100001, dataout = 110000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 160: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100001, dataout = 110000
+# UVM_INFO shift_reg_driver.sv(49) @ 162: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 162: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111, dataout = 1110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 162: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111, dataout = 1110
+# UVM_INFO shift_reg_driver.sv(49) @ 164: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 164: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = 100001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 164: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11, dataout = 100001
+# UVM_INFO shift_reg_driver.sv(49) @ 166: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 166: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1, dataout = 11
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 166: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1, dataout = 11
+# UVM_INFO shift_reg_driver.sv(49) @ 168: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 168: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11100, dataout = 111000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 168: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11100, dataout = 111000
+# UVM_INFO shift_reg_driver.sv(49) @ 170: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 170: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = 10
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 170: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = 10
+# UVM_INFO shift_reg_driver.sv(49) @ 172: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 172: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1100, dataout = 110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 172: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1100, dataout = 110
+# UVM_INFO shift_reg_driver.sv(49) @ 174: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 174: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 174: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_driver.sv(49) @ 176: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 176: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 176: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_driver.sv(49) @ 178: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 178: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 178: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 180: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 180: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10101, dataout = 101010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 180: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10101, dataout = 101010
+# UVM_INFO shift_reg_driver.sv(49) @ 182: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 182: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1001, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 182: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1001, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 184: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 184: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 184: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100100, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 186: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 186: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101010, dataout = 110101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 186: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101010, dataout = 110101
+# UVM_INFO shift_reg_driver.sv(49) @ 188: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 188: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = 11100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 188: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111001, dataout = 11100
+# UVM_INFO shift_reg_driver.sv(49) @ 190: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 190: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 190: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1010, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 192: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 192: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 192: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 194: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 194: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10101, dataout = 101011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 194: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10101, dataout = 101011
+# UVM_INFO shift_reg_driver.sv(49) @ 196: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 196: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 196: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 198: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 198: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101111, dataout = 11111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 198: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101111, dataout = 11111
+# UVM_INFO shift_reg_driver.sv(49) @ 200: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 200: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 200: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 202: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 202: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = 1010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 202: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = 1010
+# UVM_INFO shift_reg_driver.sv(49) @ 204: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 204: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 204: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_driver.sv(49) @ 206: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 206: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110101, dataout = 111010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 206: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110101, dataout = 111010
+# UVM_INFO shift_reg_driver.sv(49) @ 208: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 208: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 208: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 210: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 210: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 210: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_driver.sv(49) @ 212: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 212: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 212: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 214: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 214: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1111, dataout = 111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 214: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1111, dataout = 111
+# UVM_INFO shift_reg_driver.sv(49) @ 216: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 216: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 216: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 218: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 218: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11101, dataout = 111011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 218: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11101, dataout = 111011
+# UVM_INFO shift_reg_driver.sv(49) @ 220: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 220: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = 100100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 220: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1001, dataout = 100100
+# UVM_INFO shift_reg_driver.sv(49) @ 222: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 222: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110001, dataout = 11000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 222: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110001, dataout = 11000
+# UVM_INFO shift_reg_driver.sv(49) @ 224: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 224: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101011, dataout = 10111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 224: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101011, dataout = 10111
+# UVM_INFO shift_reg_driver.sv(49) @ 226: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 226: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100101, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 226: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100101, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 228: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 228: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111, dataout = 1110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 228: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111, dataout = 1110
+# UVM_INFO shift_reg_driver.sv(49) @ 230: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 1111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 230: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 1111, dataout = 100111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 230: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 1111, dataout = 100111
+# UVM_INFO shift_reg_driver.sv(49) @ 232: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 232: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 232: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 234: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 234: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 234: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_driver.sv(49) @ 236: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 236: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101100, dataout = 110110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 236: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101100, dataout = 110110
+# UVM_INFO shift_reg_driver.sv(49) @ 238: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 238: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1101, dataout = 100110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 238: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1101, dataout = 100110
+# UVM_INFO shift_reg_driver.sv(49) @ 240: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 240: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 240: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_driver.sv(49) @ 242: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 242: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 242: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 244: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 244: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10000, dataout = 100000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 244: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10000, dataout = 100000
+# UVM_INFO shift_reg_driver.sv(49) @ 246: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 246: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100110, dataout = 10011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 246: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100110, dataout = 10011
+# UVM_INFO shift_reg_driver.sv(49) @ 248: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 248: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 248: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_driver.sv(49) @ 250: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 250: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = 101001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 250: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = 101001
+# UVM_INFO shift_reg_driver.sv(49) @ 252: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 252: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100, dataout = 100010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 252: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100, dataout = 100010
+# UVM_INFO shift_reg_driver.sv(49) @ 254: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 254: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11001, dataout = 110010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 254: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11001, dataout = 110010
+# UVM_INFO shift_reg_driver.sv(49) @ 256: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 256: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = 111011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 256: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111101, dataout = 111011
+# UVM_INFO shift_reg_driver.sv(49) @ 258: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 258: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 258: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 260: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 260: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110110, dataout = 101101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 260: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 110110, dataout = 101101
+# UVM_INFO shift_reg_driver.sv(49) @ 262: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 262: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1001, dataout = 10010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 262: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 1001, dataout = 10010
+# UVM_INFO shift_reg_driver.sv(49) @ 264: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 264: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11101, dataout = 111010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 264: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 11101, dataout = 111010
+# UVM_INFO shift_reg_driver.sv(49) @ 266: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 266: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101100, dataout = 10110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 266: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101100, dataout = 10110
+# UVM_INFO shift_reg_driver.sv(49) @ 268: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 268: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 268: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_driver.sv(49) @ 270: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 270: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = 101001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 270: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10100, dataout = 101001
+# UVM_INFO shift_reg_driver.sv(49) @ 272: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 272: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100110, dataout = 110011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 272: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 100110, dataout = 110011
+# UVM_INFO shift_reg_driver.sv(49) @ 274: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 274: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11001, dataout = 110010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 274: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11001, dataout = 110010
+# UVM_INFO shift_reg_driver.sv(49) @ 276: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 276: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 276: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_driver.sv(49) @ 278: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 278: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101100, dataout = 11001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 278: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 101100, dataout = 11001
+# UVM_INFO shift_reg_driver.sv(49) @ 280: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 280: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101, dataout = 1010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 280: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101, dataout = 1010
+# UVM_INFO shift_reg_driver.sv(49) @ 282: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 282: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1011, dataout = 100101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 282: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1011, dataout = 100101
+# UVM_INFO shift_reg_driver.sv(49) @ 284: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 284: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10011, dataout = 100110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 284: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10011, dataout = 100110
+# UVM_INFO shift_reg_driver.sv(49) @ 286: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 286: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1111, dataout = 11110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 286: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1111, dataout = 11110
+# UVM_INFO shift_reg_driver.sv(49) @ 288: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 288: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 288: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 290: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 290: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 290: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_driver.sv(49) @ 292: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 292: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 292: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_driver.sv(49) @ 294: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 294: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10010, dataout = 1001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 294: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10010, dataout = 1001
+# UVM_INFO shift_reg_driver.sv(49) @ 296: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 296: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1000, dataout = 10000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 296: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1000, dataout = 10000
+# UVM_INFO shift_reg_driver.sv(49) @ 298: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 298: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11000, dataout = 101100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 298: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11000, dataout = 101100
+# UVM_INFO shift_reg_driver.sv(49) @ 300: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 300: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 300: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110010, dataout = 100101
+# UVM_INFO shift_reg_driver.sv(49) @ 302: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 302: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 302: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_driver.sv(49) @ 304: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 304: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10000, dataout = 100001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 304: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10000, dataout = 100001
+# UVM_INFO shift_reg_driver.sv(49) @ 306: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 306: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10, dataout = 100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 306: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10, dataout = 100
+# UVM_INFO shift_reg_driver.sv(49) @ 308: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 308: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 308: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_driver.sv(49) @ 310: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 310: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110010, dataout = 100100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 310: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110010, dataout = 100100
+# UVM_INFO shift_reg_driver.sv(49) @ 312: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 312: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = 1
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 312: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = 1
+# UVM_INFO shift_reg_driver.sv(49) @ 314: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 314: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10001, dataout = 101000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 314: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10001, dataout = 101000
+# UVM_INFO shift_reg_driver.sv(49) @ 316: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 316: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11011, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 316: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11011, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 318: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 318: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100001, dataout = 110000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 318: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100001, dataout = 110000
+# UVM_INFO shift_reg_driver.sv(49) @ 320: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 320: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110110, dataout = 101100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 320: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110110, dataout = 101100
+# UVM_INFO shift_reg_driver.sv(49) @ 322: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 322: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = 1100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 322: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = 1100
+# UVM_INFO shift_reg_driver.sv(49) @ 324: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 324: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = 1100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 324: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110, dataout = 1100
+# UVM_INFO shift_reg_driver.sv(49) @ 326: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 326: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111011, dataout = 110110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 326: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 111011, dataout = 110110
+# UVM_INFO shift_reg_driver.sv(49) @ 328: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 328: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110000, dataout = 111000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 328: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 110000, dataout = 111000
+# UVM_INFO shift_reg_driver.sv(49) @ 330: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 330: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 330: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_driver.sv(49) @ 332: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 332: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 332: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 334: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 334: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 334: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_driver.sv(49) @ 336: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 336: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 336: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_driver.sv(49) @ 338: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 338: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10000, dataout = 1000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 338: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10000, dataout = 1000
+# UVM_INFO shift_reg_driver.sv(49) @ 340: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 340: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101110, dataout = 10111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 340: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101110, dataout = 10111
+# UVM_INFO shift_reg_driver.sv(49) @ 342: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 342: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1010, dataout = 10101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 342: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1010, dataout = 10101
+# UVM_INFO shift_reg_driver.sv(49) @ 344: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 344: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 344: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_driver.sv(49) @ 346: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 346: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1, dataout = 100000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 346: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 1, dataout = 100000
+# UVM_INFO shift_reg_driver.sv(49) @ 348: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 348: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = 110100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 348: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101001, dataout = 110100
+# UVM_INFO shift_reg_driver.sv(49) @ 350: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 350: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 350: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100110, dataout = 1101
+# UVM_INFO shift_reg_driver.sv(49) @ 352: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 352: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 352: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 354: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 354: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 354: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 356: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 356: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 356: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10100, dataout = 101000
+# UVM_INFO shift_reg_driver.sv(49) @ 358: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 358: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = 101110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 358: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = 101110
+# UVM_INFO shift_reg_driver.sv(49) @ 360: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 360: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100100, dataout = 1001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 360: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 100100, dataout = 1001
+# UVM_INFO shift_reg_driver.sv(49) @ 362: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 362: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = 11101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 362: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = 11101
+# UVM_INFO shift_reg_driver.sv(49) @ 364: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 364: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1, dataout = 100000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 364: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1, dataout = 100000
+# UVM_INFO shift_reg_driver.sv(49) @ 366: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 366: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100, dataout = 1001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 366: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100, dataout = 1001
+# UVM_INFO shift_reg_driver.sv(49) @ 368: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 368: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = 11101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 368: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1110, dataout = 11101
+# UVM_INFO shift_reg_driver.sv(49) @ 370: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 370: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 370: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111011, dataout = 111101
+# UVM_INFO shift_reg_driver.sv(49) @ 372: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 372: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = 1110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 372: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 11100, dataout = 1110
+# UVM_INFO shift_reg_driver.sv(49) @ 374: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 374: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10011, dataout = 101001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 374: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10011, dataout = 101001
+# UVM_INFO shift_reg_driver.sv(49) @ 376: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 376: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 376: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101101, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 378: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 378: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 378: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 1101, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 380: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 380: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = 110110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 380: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101101, dataout = 110110
+# UVM_INFO shift_reg_driver.sv(49) @ 382: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 382: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11100, dataout = 101110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 382: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 11100, dataout = 101110
+# UVM_INFO shift_reg_driver.sv(49) @ 384: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 384: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1011, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 384: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 1011, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 386: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 386: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 386: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111001, dataout = 111100
+# UVM_INFO shift_reg_driver.sv(49) @ 388: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 388: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 388: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110111, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 390: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 11110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 390: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 11110, dataout = 1111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 390: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 11110, dataout = 1111
+# UVM_INFO shift_reg_driver.sv(49) @ 392: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 392: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110101, dataout = 101011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 392: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 110101, dataout = 101011
+# UVM_INFO shift_reg_driver.sv(49) @ 394: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 394: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 394: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 396: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 396: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 396: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 398: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 398: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 398: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 111011, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 400: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 400: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11111, dataout = 111111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 400: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 11111, dataout = 111111
+# UVM_INFO shift_reg_driver.sv(49) @ 402: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 402: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 402: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101000, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 404: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 404: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111000, dataout = 11100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 404: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 111000, dataout = 11100
+# UVM_INFO shift_reg_driver.sv(49) @ 406: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 406: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 406: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101010, dataout = 10101
+# UVM_INFO shift_reg_driver.sv(49) @ 408: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 408: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101100, dataout = 11001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 408: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101100, dataout = 11001
+# UVM_INFO shift_reg_driver.sv(49) @ 410: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 410: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11101, dataout = 111010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 410: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11101, dataout = 111010
+# UVM_INFO shift_reg_driver.sv(49) @ 412: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 412: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = 101110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 412: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 10111, dataout = 101110
+# UVM_INFO shift_reg_driver.sv(49) @ 414: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 414: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 414: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 101101, dataout = 11011
+# UVM_INFO shift_reg_driver.sv(49) @ 416: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 416: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = 10
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 416: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 1, dataout = 10
+# UVM_INFO shift_reg_driver.sv(49) @ 418: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 418: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101000, dataout = 10001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 418: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101000, dataout = 10001
+# UVM_INFO shift_reg_driver.sv(49) @ 420: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 420: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10110, dataout = 101100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 420: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 10110, dataout = 101100
+# UVM_INFO shift_reg_driver.sv(49) @ 422: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 422: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 422: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 110111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 424: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 424: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111010, dataout = 111101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 424: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111010, dataout = 111101
+# UVM_INFO shift_reg_driver.sv(49) @ 426: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 426: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 426: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 11111, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 428: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 428: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = 1
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 428: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10, dataout = 1
+# UVM_INFO shift_reg_driver.sv(49) @ 430: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 430: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1111, dataout = 100111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 430: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 1111, dataout = 100111
+# UVM_INFO shift_reg_driver.sv(49) @ 432: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 0, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 432: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 432: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 0, dataout = 0
+# UVM_INFO shift_reg_driver.sv(49) @ 434: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 434: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111001, dataout = 110011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 434: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 1, datain = 111001, dataout = 110011
+# UVM_INFO shift_reg_driver.sv(49) @ 436: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 436: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = 11101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 436: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 101110, dataout = 11101
+# UVM_INFO shift_reg_driver.sv(49) @ 438: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 438: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1011, dataout = 10111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 438: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1011, dataout = 10111
+# UVM_INFO shift_reg_driver.sv(49) @ 440: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 440: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110000, dataout = 11000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 440: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 110000, dataout = 11000
+# UVM_INFO shift_reg_driver.sv(49) @ 442: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 442: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 442: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 444: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 444: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1100, dataout = 11001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 444: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 1100, dataout = 11001
+# UVM_INFO shift_reg_driver.sv(49) @ 446: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 446: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 446: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 110011, dataout = 111001
+# UVM_INFO shift_reg_driver.sv(49) @ 448: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 448: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = 110111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 448: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 101111, dataout = 110111
+# UVM_INFO shift_reg_driver.sv(49) @ 450: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 450: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 450: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 100010, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 452: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 452: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11, dataout = 1
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 452: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 11, dataout = 1
+# UVM_INFO shift_reg_driver.sv(49) @ 454: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 454: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110100, dataout = 11010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 454: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110100, dataout = 11010
+# UVM_INFO shift_reg_driver.sv(49) @ 456: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 456: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110011, dataout = 100110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 456: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110011, dataout = 100110
+# UVM_INFO shift_reg_driver.sv(49) @ 458: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 458: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 458: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 460: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10001, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 460: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 460: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10001, dataout = 100010
+# UVM_INFO shift_reg_driver.sv(49) @ 462: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 462: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10, dataout = 101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 462: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10, dataout = 101
+# UVM_INFO shift_reg_driver.sv(49) @ 464: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 464: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111010, dataout = 11101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 464: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 111010, dataout = 11101
+# UVM_INFO shift_reg_driver.sv(49) @ 466: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 466: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 466: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100000, dataout = 10000
+# UVM_INFO shift_reg_driver.sv(49) @ 468: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 468: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = 110001
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 468: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 100011, dataout = 110001
+# UVM_INFO shift_reg_driver.sv(49) @ 470: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 470: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101, dataout = 10
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 470: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 101, dataout = 10
+# UVM_INFO shift_reg_driver.sv(49) @ 472: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 472: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10011, dataout = 100110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 472: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 10011, dataout = 100110
+# UVM_INFO shift_reg_driver.sv(49) @ 474: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 474: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = 10100
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 474: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 101010, dataout = 10100
+# UVM_INFO shift_reg_driver.sv(49) @ 476: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 476: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 476: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_driver.sv(49) @ 478: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 478: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10, dataout = 1
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 478: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 10, dataout = 1
+# UVM_INFO shift_reg_driver.sv(49) @ 480: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10111, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 480: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10111, dataout = 101111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 480: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 1, mode = 0, datain = 10111, dataout = 101111
+# UVM_INFO shift_reg_driver.sv(49) @ 482: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110000, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 482: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110000, dataout = 11000
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 482: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110000, dataout = 11000
+# UVM_INFO shift_reg_driver.sv(49) @ 484: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 484: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 484: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10110, dataout = 1011
+# UVM_INFO shift_reg_driver.sv(49) @ 486: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 486: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = 1010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 486: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 10100, dataout = 1010
+# UVM_INFO shift_reg_driver.sv(49) @ 488: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 488: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = 111110
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 488: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 111100, dataout = 111110
+# UVM_INFO shift_reg_driver.sv(49) @ 490: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 490: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110101, dataout = 101010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 490: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 0, datain = 110101, dataout = 101010
+# UVM_INFO shift_reg_driver.sv(49) @ 492: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110101, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 492: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110101, dataout = 111010
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 492: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 110101, dataout = 111010
+# UVM_INFO shift_reg_driver.sv(49) @ 494: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 494: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100, dataout = 10
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 494: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 0, datain = 100, dataout = 10
+# UVM_INFO shift_reg_driver.sv(49) @ 496: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 496: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 496: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 0, mode = 1, datain = 101011, dataout = 110101
+# UVM_INFO shift_reg_driver.sv(49) @ 498: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100011, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 498: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 498: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 0, direction = 1, mode = 1, datain = 100011, dataout = 111
+# UVM_INFO shift_reg_driver.sv(49) @ 500: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 500: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10110, dataout = 101011
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 500: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 0, datain = 10110, dataout = 101011
+# UVM_INFO shift_reg_driver.sv(49) @ 502: uvm_test_top.env.agt.shift_driver [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = x
+# UVM_INFO shift_reg_mon.sv(41) @ 502: uvm_test_top.env.agt.shift_reg_monitor [run_phase]  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_scoreboard.sv(50) @ 502: uvm_test_top.env.shift_reg_scoreboard [run_phase] Correct dataout_ref:  reset = 0, serial_in = 1, direction = 0, mode = 1, datain = 111110, dataout = 11111
+# UVM_INFO shift_reg_test.sv(63) @ 502: uvm_test_top [run_phase] Main deAsserted
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 502: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO shift_reg_scoreboard.sv(74) @ 502: uvm_test_top.env.shift_reg_scoreboard [report_phase] Total successful transaction: 251
+# UVM_INFO shift_reg_scoreboard.sv(75) @ 502: uvm_test_top.env.shift_reg_scoreboard [report_phase] Total faild transaction: 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  763
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [report_phase]     2
+# [run_phase]   757
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 502 ns  Iteration: 61  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
