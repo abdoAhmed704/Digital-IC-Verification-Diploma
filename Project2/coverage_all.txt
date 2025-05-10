@@ -1,0 +1,97 @@
+QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+Start time: 22:37:08 on May 06,2025
+vcover report FIFO_cov.ucdb -details -annotate -all 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\top#dut /sva_f
+=== Design Unit: work.fifo_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       9         9         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#dut /sva_f/Reset_Behavior
+                     fifo_sva.sv(5)                     0          1
+/\top#dut /sva_f/empty_assert
+                     fifo_sva.sv(12)                    0          1
+/\top#dut /sva_f/rd_ptr_wrap_asset
+                     fifo_sva.sv(21)                    0          1
+/\top#dut /sva_f/write_acknowledge_assert
+                     fifo_sva.sv(28)                    0          1
+/\top#dut /sva_f/overflow_assert
+                     fifo_sva.sv(37)                    0          1
+/\top#dut /sva_f/underflow_assert
+                     fifo_sva.sv(46)                    0          1
+/\top#dut /sva_f/full_assert
+                     fifo_sva.sv(54)                    0          1
+/\top#dut /sva_f/almsotfull_assert
+                     fifo_sva.sv(63)                    0          1
+/\top#dut /sva_f/almsotempty_assert
+                     fifo_sva.sv(72)                    0          1
+
+Directive Coverage:
+    Directives                       8         8         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#dut /sva_f/empty_cover             fifo_sva Verilog  SVA  fifo_sva.sv(13) 3843 Covered   
+/\top#dut /sva_f/rd_ptr_wrap_cover       fifo_sva Verilog  SVA  fifo_sva.sv(22)    3 Covered   
+/\top#dut /sva_f/Write_Acknowledge_cover fifo_sva Verilog  SVA  fifo_sva.sv(29) 2588 Covered   
+/\top#dut /sva_f/overflow_cover          fifo_sva Verilog  SVA  fifo_sva.sv(38) 1015 Covered   
+/\top#dut /sva_f/underflow_cover         fifo_sva Verilog  SVA  fifo_sva.sv(47) 2801 Covered   
+/\top#dut /sva_f/full_cover              fifo_sva Verilog  SVA  fifo_sva.sv(55) 1139 Covered   
+/\top#dut /sva_f/almsotfull_cover        fifo_sva Verilog  SVA  fifo_sva.sv(64)  167 Covered   
+/\top#dut /sva_f/almsotempty_cover       fifo_sva Verilog  SVA  fifo_sva.sv(73) 1107 Covered   
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#dut /sva_f/empty_cover             fifo_sva Verilog  SVA  fifo_sva.sv(13) 3843 Covered   
+/\top#dut /sva_f/rd_ptr_wrap_cover       fifo_sva Verilog  SVA  fifo_sva.sv(22)    3 Covered   
+/\top#dut /sva_f/Write_Acknowledge_cover fifo_sva Verilog  SVA  fifo_sva.sv(29) 2588 Covered   
+/\top#dut /sva_f/overflow_cover          fifo_sva Verilog  SVA  fifo_sva.sv(38) 1015 Covered   
+/\top#dut /sva_f/underflow_cover         fifo_sva Verilog  SVA  fifo_sva.sv(47) 2801 Covered   
+/\top#dut /sva_f/full_cover              fifo_sva Verilog  SVA  fifo_sva.sv(55) 1139 Covered   
+/\top#dut /sva_f/almsotfull_cover        fifo_sva Verilog  SVA  fifo_sva.sv(64)  167 Covered   
+/\top#dut /sva_f/almsotempty_cover       fifo_sva Verilog  SVA  fifo_sva.sv(73) 1107 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 8
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#dut /sva_f/Reset_Behavior
+                     fifo_sva.sv(5)                     0          1
+/\top#dut /sva_f/empty_assert
+                     fifo_sva.sv(12)                    0          1
+/\top#dut /sva_f/rd_ptr_wrap_asset
+                     fifo_sva.sv(21)                    0          1
+/\top#dut /sva_f/write_acknowledge_assert
+                     fifo_sva.sv(28)                    0          1
+/\top#dut /sva_f/overflow_assert
+                     fifo_sva.sv(37)                    0          1
+/\top#dut /sva_f/underflow_assert
+                     fifo_sva.sv(46)                    0          1
+/\top#dut /sva_f/full_assert
+                     fifo_sva.sv(54)                    0          1
+/\top#dut /sva_f/almsotfull_assert
+                     fifo_sva.sv(63)                    0          1
+/\top#dut /sva_f/almsotempty_assert
+                     fifo_sva.sv(72)                    0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
+End time: 22:37:08 on May 06,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
