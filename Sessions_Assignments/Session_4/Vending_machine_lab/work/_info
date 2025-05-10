@@ -1,0 +1,173 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/verification/Session_4/files
+T_opt
+Z2 !s110 1745436390
+Vl_E]`;@=gnIhBKGJK9;l]3
+04 19 4 work vending_machine_top fast 0
+=2-7c8ae19cdeb7-68093ee6-1c1-4aa0
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vvending_machine
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 hHT1]8`7[@eMX_0Vc6Q8d0
+IC2U?0hC=OBRNQ8NTJgGg]1
+S1
+R1
+w1745425735
+8vending_machine.sv
+Fvending_machine.sv
+!i122 25
+L0 8 52
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1745436390.000000
+Z8 !s107 vending_machine_top.sv|vending_machine_tb.sv|vending_machine_sva.sv|vending_machine_mon.sv|vending_machine_if.sv|vending_machine.sv|
+Z9 !s90 -reportprogress|300|vending_machine.sv|vending_machine_if.sv|vending_machine_mon.sv|vending_machine_sva.sv|vending_machine_tb.sv|vending_machine_top.sv|+cover|
+!i113 0
+Z10 !s102 +cover
+Z11 o+cover -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+Yvending_machine_if
+R4
+R2
+!i10b 1
+!s100 <RKX?A7<F;4HYCB0F9[Pe1
+IohjDMR=4Z7JbP`YkIT31Q2
+S1
+R1
+w1745429265
+8vending_machine_if.sv
+Fvending_machine_if.sv
+!i122 25
+L0 8 0
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R3
+vvending_machine_monitor
+R4
+R2
+!i10b 1
+!s100 aGNb]di2A8lZ09KCznIiL0
+IPO@EBbg]S1K2aiS7:eVik3
+S1
+R1
+w1745428837
+8vending_machine_mon.sv
+Fvending_machine_mon.sv
+!i122 25
+L0 8 7
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R3
+vvending_machine_sva
+R4
+R2
+!i10b 1
+!s100 [TXLL>U0kSJMjL<07Sio33
+IHjBnRz^<9LUgPe6im55S<0
+S1
+R1
+w1745428963
+8vending_machine_sva.sv
+Fvending_machine_sva.sv
+!i122 25
+L0 9 27
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R3
+vvending_machine_tb
+R4
+R2
+!i10b 1
+!s100 MYjbjP;[:`m2`o8ZKnRYg3
+I`lV`d9QW`F;z@R0`;]P3@0
+S1
+R1
+w1745423712
+8vending_machine_tb.sv
+Fvending_machine_tb.sv
+!i122 25
+L0 8 21
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R3
+vvending_machine_top
+R4
+R2
+!i10b 1
+!s100 JLXZcQ=N?MPI1c=N>1>Q42
+IUf`FG<dbX0]8eLCXE6X>E3
+S1
+R1
+w1745436379
+8vending_machine_top.sv
+Fvending_machine_top.sv
+!i122 25
+L0 8 23
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R3
